@@ -1,0 +1,36 @@
+/* style impression cv */
+
+	header, .titre, .bouton  , nav, aside, footer{   /* n'affiche pas entête, titre de la page, */
+	display: none;                       /*  fleche haut, le menu, leins sur le cote et pied de page */
+	}
+	body{
+		background-color: white;
+	}
+		
+	.cv {     /* block cv qui prend toute la page */
+	font-size: 15px;
+
+	}
+	a {
+	text-decoration: none;   /* n'affiche pas les souligneùents des liens */
+	}
+	.photo {
+	width: 150px; /* diminue taille photo */
+	height: 30px;
+	}
+	.haut{        
+	height: 120px;     /* rapetissie l'entête du cv */
+	}
+	h2 {   /* titre des parties */
+	font-size: 20px;
+	color: black;
+	border-bottom: 2px solid black;  /* met en noir les séparations */
+	}
+	article {     /* chaque partie du cv */
+	margin-bottom: 5px;  /* espace les parties */
+	}
+	#rub {    /* decale les rubrique opur les aligner */
+	margin-top: 235px;
+	margin-bottom: 35px;
+	}
+

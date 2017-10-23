@@ -1,0 +1,53 @@
+@import "style.css"; /* import style de l'entête du menu et du pied de page  */
+
+nav ul li.menuequipe {
+	background-color: #96CA2D; 
+}
+
+.equipe{
+display: table;
+margin: 0 auto;
+margin-top: 20px;
+
+}
+
+.equipe input{
+margin-top: 10px;
+}
+
+button {
+    width: 55px;
+    height: 55px;
+    background: #ffffff;
+    padding-top: 6px;
+    font: 40px;
+    border-radius: 50%;
+    position: fixed;
+    bottom: 30px;
+    right: 40px;
+}
+
+
+/********************************** REVENIR EN HAUT **********************************/
+.bouton{
+	position: fixed;
+	bottom: 40px;
+	right: 15px;
+}
+
+.bouton img{
+	width: 20px;
+	height: 20px;
+}
+
+/**************************************************************************************/
+/**************************** POUR LES TABLETTES *************************************************************/
+@media screen and (max-width: 1024px){
+ 
+		
+	iframe {
+		height:350px;      /* reduit taille map */
+		width: 500px;
+	}
+
+}

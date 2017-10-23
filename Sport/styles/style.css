@@ -1,0 +1,117 @@
+@font-face {
+	font-family: "Cambria";   /* declare la police Cambria */
+	src: url('Cambria.ttf') format('truetype');
+}
+
+*{                        /* remet tout à zéro pour s'adapter à chaque navigateur */
+	margin: 0px;
+	padding: 0px;
+	font-family: Cambria;
+}
+
+
+h1 {                          /* mon prenom nom du site */
+	font-family: Cambria;
+	margin-top: 20px;
+	font-size: 50px;
+	font-weight: normal;
+	text-align: center;
+}
+
+header{
+	height: 100px;
+}
+/******************************************** MENU ***************************************************/
+ul {                        /* met le menu au milieu */
+	display: table;
+	margin: 0 auto;
+}
+
+nav {                          /* menu fond */
+	width: 100%;
+	background-color: #EFECCA;
+	border-top: 3px solid #96CA2D;
+	border-bottom: 3px solid #96CA2D;
+}
+ 
+nav a {
+	text-decoration: none;  /* retire soulignement liens */
+	display: inline-block;
+}
+
+nav  > ul > li {
+	list-style-type: none;  /* retire les points des listes */
+	float: left;
+	position: relative;
+}
+
+nav ul li a{                            /* les liens du menu */
+	padding: 20px 30px; 
+	color: #333333;
+	text-transform: uppercase;   /* met en majuscules */
+	font-size: 25px;
+}
+/***********************************************************************SOUS MENU ***********************************************/
+
+nav li:hover .sousmenu {   /* quand on passe la souris dessus */
+	display: inline-block;
+	position: absolute;   /* sous le menu */
+	top: 100%;
+	left: 0px;
+	padding: 0px;
+}
+
+
+ul li a:hover {                         /* quand on passe la souris menu */
+	background-color:#96CA2D
+}
+
+/**************************************** PIED DE PAGE **********************************/
+
+footer {            
+	height: 20px;       
+	background-color:#EFECCA;
+	color: #333333;
+	text-align: center;
+	font-size: 15px;      
+	margin-top: 25px;  
+	margin-bottom: 5px;  
+	padding-top: 5px;
+	padding-bottom: 5px;
+	border-top: 2px solid #96CA2D;
+	border-bottom: 2px solid #96CA2D;
+	width:100%;
+}
+
+.gauchepdp {                           /* pied de page a gauche */
+	float: left;
+	margin-left: 15px;
+}
+	 
+.droitepdp {                      /* pied de page a droite */
+	float: right;
+	margin-right: 15px;
+}
+
+.droitepdp a {  /* envoyer mail */
+	color: #333333;
+}
+
+.droitepdp a:hover {
+	color: blue;
+}
+
+/**************************************************************************************/
+/**************************** POUR LES TABLETTES *************************************************************/
+@media screen and (max-width: 1024px){
+
+	nav ul li a{                            /* les liens du menu */
+	padding: 10px 20px;   /* onglets plus petits */
+	font-size: 20px;   /* police plus petite */
+	}
+	.sousmenu li a {                   /* liens des sous menu */
+	padding: 5px 20px;  
+	font-size: 15px;    /* police plus petite */
+	width: 150px;      /* sous onglets plus petits */
+	}
+}

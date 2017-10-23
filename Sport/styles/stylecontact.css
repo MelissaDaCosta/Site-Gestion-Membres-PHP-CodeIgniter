@@ -1,0 +1,41 @@
+@import "style.css"; /* import style de l'entête du menu et du pied de page */
+/*********************************************** CONTACT *****************************************************/
+nav ul li.contact {
+	background-color: #96CA2D; 
+}
+ 
+.formulaire {                /* le gros bloc qui fait toute la page */
+	margin: auto;
+	margin-top: 30px;
+	font-size: 17px; 
+	text-align: justify;
+	width: 90%;
+	padding-bottom: 100px;
+}
+
+form {    
+	display: table;   /* met le formulaire au milieu */
+	margin: 0 auto;
+}
+
+legend  {
+	font-weight: bold;
+	font-size: 20px;
+}
+
+fieldset {
+	padding: 10px;
+	margin: 20px;
+}
+
+section  a{    /* met les liens en noir */
+	color: black;
+}
+
+section a:hover {   /* quand on passe dessus */
+	color: blue;
+}
+.rapport{
+	width: 70%;
+	margin: auto;
+}
